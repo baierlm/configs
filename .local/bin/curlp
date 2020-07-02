@@ -1,0 +1,9 @@
+#!/bin/sh
+reversed=$(echo $1 | rev);
+if [[ $reversed == /* ]]; 
+then 
+    reversed=${reversed:1};  
+fi
+
+filename=$(echo $reversed | cut -d/ -f1 | rev)
+curl $1 >> $filename

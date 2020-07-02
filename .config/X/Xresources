@@ -1,0 +1,48 @@
+! dwm
+dwm.borderpx          : 1   
+dwm.snap              : 32      
+dwm.showbar           : 1  
+dwm.topbar            : 1    
+dwm.nmaster           : 1   
+dwm.resizehint        : 0
+dwm.mfact             : 0.55
+dwm.background        : #282828
+dwm.foreground        : #a89984
+dwm.bordercolor       : #444444
+dwm.selbackground     : #458588
+dwm.selforeground     : #ebdbb2
+dwm.selbordercolor    : #005577
+
+! dmenu 
+dmenu.font            : monospace:size=10
+dmenu.background      : #32302f
+dmenu.foreground      : #ebdbb2
+dmenu.selbackground   : #458588
+dmenu.selforeground   : #ebdbb2
+dmenu.hlforeground    : #fabd2f
+dmenu.hlbackground    : #32302f
+dmenu.hlselbackground : #458588
+dmenu.hlselforeground : #fabd2f
+
+! st
+st.font     : monospace:size=10:antialias=true:autohint=true
+st.color0   : #282828      
+st.color1   : #cc241d      
+st.color2   : #98971a     
+st.color3   : #d79921     
+st.color4   : #458588     
+st.color5   : #b16286     
+st.color6   : #689d6a     
+st.color7   : #a89984     
+st.color8   : #928374
+st.color9   : #fb4934     
+st.color10  : #b8bb26    
+st.color11  : #fabd2f    
+st.color12  : #83a598    
+st.color13  : #d3869b    
+st.color14  : #8ec07c    
+st.color15  : #ebdbb2
+! TODO these are not working
+! st.background   : 1  
+! st.foreground   : 15
+! st.cursorColor  : 15 

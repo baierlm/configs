@@ -1,0 +1,5 @@
+#/bin/sh
+sudo chown -R $USER:$USER $1
+sudo find $1 -type d -exec chmod 770 {} \;
+sudo find bin -type f -exec echo {} \; | while read FILE; do [ -x $FILE ] && chmod 770 $FILE || chmod 660 $FILE; done
+

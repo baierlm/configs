@@ -1,0 +1,6 @@
+FILE=$(ls ~/Documents/wiki | dmenu -l 10 -w 300 -sf "#282828" -shf "#fabd2f" -sb "#98971a" -shb "#98971a" -p "wiki>"); 
+if [ -n "$FILE" ]; then
+    source /usr/share/nvm/init-nvm.sh 
+    st -e nvim "$HOME/Documents/wiki/$FILE" &
+fi
+

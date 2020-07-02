@@ -1,0 +1,20 @@
+#!/bin/sh
+function run {
+  if ! pgrep $1 ;
+  then
+    $@&
+  fi
+}
+xrdb ~/.config/X/Xresources
+run setup-keyboard.sh &
+run unclutter &
+run nm-applet &
+run pa-applet &
+run udiskie -a -t -m nested & 
+run xfce4-power-manager &
+run compton --config $HOME/.config/compton/compton.conf &
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+sh /home/mark/.fehbg &
+wmname LG3D &
+run dropbox &
+xinput set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Accel Speed' 0.5 &

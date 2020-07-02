@@ -1,0 +1,24 @@
+# s ~/.scripts -> gs
+# cnv ~/.config/nvim init.vim -> gcnv, fcnv
+# z - ~/.zshrc
+
+h ~/
+
+d	 ~/Documents
+D	 ~/Downloads
+p	 ~/Pictures
+s	 ~/.local/bin
+l    - ~/.local/bin/locations
+cx    ~/.config/X ~/.config/X/Xresources
+cst  ~/.config/st ~/.config/st/config.h
+clf  ~/.config/lf ~/.config/lf/lfrc
+cdwm ~/.config/dwm ~/.config/dwm/config.h
+cdm  ~/.config/dmenu ~/.config/dmenu/config.h 
+cz   ~/.config/zsh  ~/.config/zsh/.zshrc
+ch	 ~/.config -
+cr   ~/.config/ranger ~/.config/ranger/rc.conf
+ctx  ~/.config/tmux ~/.config/tmux/tmux.conf
+cct  ~/.config/compton ~/.config/compton/compton.conf
+ca   ~/.config/awesome ~/.config/awesome/rc.lua
+cnv  ~/.config/nvim ~/.config/nvim/init.vim
+
