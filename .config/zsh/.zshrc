@@ -11,7 +11,7 @@ HIST_STAMPS="dd.mm.yyyy"
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
-
+setopt auto_cd
 
 # Autocomplete
 autoload -U compinit
@@ -42,19 +42,19 @@ source ~/.config/zsh/.shortcuts
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/anaconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/mark/.anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/opt/anaconda/etc/profile.d/conda.sh" ]; then
-        . "/opt/anaconda/etc/profile.d/conda.sh"
+    if [ -f "/home/mark/.anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/mark/.anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/opt/anaconda/bin:$PATH"
+        export PATH="/home/mark/.anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
+conda config --set auto_activate_base false
 # <<< conda initialize <<<
-#source /opt/ros/melodic/setup.zsh
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {

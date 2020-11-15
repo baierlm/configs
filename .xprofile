@@ -12,9 +12,13 @@ run nm-applet &
 run pa-applet &
 run udiskie -a -t -m nested & 
 run xfce4-power-manager &
-run compton --config $HOME/.config/compton/compton.conf &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 sh /home/mark/.fehbg &
 wmname LG3D &
 run dropbox &
+optimus-manager-qt &
+blueman-applet &
 xinput set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Accel Speed' 0.5 &
+# launch and restart sxhkd
+sxhkd -m 1 &
+echo ~/.config/sxhkd/sxhkdrc | entr -np  pkill -USR1 -x sxhkd &

@@ -1,0 +1,21 @@
+super + b
+    brave
+
+super + d
+    dmenu_run_history
+
+super + p
+    rofi-pass
+
+super + f
+    firefox
+
+super + w
+    wiki
+
+Print
+    gnome-screenshot -acf /tmp/gscreenshot && cat /tmp/gscreenshot | xclip -i -selection clipboard -target image/png && rm /tmp/gscreenshot
+
+super + Print
+    gnome-screenshot -i
+

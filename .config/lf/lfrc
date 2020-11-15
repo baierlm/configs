@@ -57,6 +57,7 @@ cmd open ${{
         text/*) $EDITOR $fx;;
         image/*) sxiv -ao $f;;
         application/pdf) zathura $f;;
+        inode/x-empty) $EDITOR $fx;;
         *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
     esac
 }}
@@ -138,14 +139,13 @@ map <enter> shell-pipe
 map x $$f
 map X !$f
 
+map n &st
+
 # dedicated keys for file opener actions
 map o &mimeopen $f
 map O $mimeopen --ask $f
 
 map r push :rename<space>
 map <delete> trash
-
-
-source /home/mark/.config/lf/shortcuts.conf
 
 source ~/.config/lf/shortcuts.conf

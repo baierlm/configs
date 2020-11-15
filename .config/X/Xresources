@@ -11,7 +11,7 @@ dwm.foreground        : #a89984
 dwm.bordercolor       : #444444
 dwm.selbackground     : #458588
 dwm.selforeground     : #ebdbb2
-dwm.selbordercolor    : #005577
+dwm.selbordercolor    : #458588
 
 ! dmenu 
 dmenu.font            : monospace:size=10

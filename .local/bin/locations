@@ -9,7 +9,8 @@ D	 ~/Downloads
 p	 ~/Pictures
 s	 ~/.local/bin
 l    - ~/.local/bin/locations
-cx    ~/.config/X ~/.config/X/Xresources
+t    ~/TU/WiSe-2020,21
+cx   ~/.config/X ~/.config/X/Xresources
 cst  ~/.config/st ~/.config/st/config.h
 clf  ~/.config/lf ~/.config/lf/lfrc
 cdwm ~/.config/dwm ~/.config/dwm/config.h
@@ -21,4 +22,5 @@ ctx  ~/.config/tmux ~/.config/tmux/tmux.conf
 cct  ~/.config/compton ~/.config/compton/compton.conf
 ca   ~/.config/awesome ~/.config/awesome/rc.lua
 cnv  ~/.config/nvim ~/.config/nvim/init.vim
+csx  ~/.config/sxhkd ~/.config/sxhkd/sxhkdrc
 
