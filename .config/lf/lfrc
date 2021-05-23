@@ -48,6 +48,21 @@ cmd bg-scale ${{
 cmd bg-tile ${{
     feh --bg-tile "$f" 
 }}
+
+cmd mpv-10 ${{
+    mpv --speed=1.0 "$f" 
+}}
+cmd mpv-15 ${{
+    mpv --speed=1.5 "$f" 
+}}
+cmd mpv-18 ${{
+    mpv --speed=1.8 "$f" 
+}}
+cmd mpv-20 ${{
+    mpv --speed=2.0 "$f" 
+}}
+
+
 # define a custom 'open' command
 # This command is called when current file is not a directory. You may want to
 # use either file extensions and/or mime types here. Below uses an editor for
@@ -131,6 +146,11 @@ map bgf bg-fill
 map bgm bg-max
 map bgs bg-scale
 map bgt bg-tile
+
+map mpv10 mpv-10
+map mpv15 mpv-15
+map mpv18 mpv-18
+map mpv20 mpv-20
 
 # use enter for shell commands
 map <enter> shell-pipe

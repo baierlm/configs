@@ -8,6 +8,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'terryma/vim-expand-region'
 Plug 'morhetz/gruvbox'
 Plug 'dkarter/bullets.vim'
+Plug 'alvan/vim-closetag'
 
 call plug#end()
 
@@ -20,6 +21,7 @@ let g:coc_global_extensions = [
     \ 'coc-tsserver',
     \ 'coc-actions',
     \ 'coc-markdownlint',
+    \ 'coc-html',
     \ 'coc-sh'
 	\]
 

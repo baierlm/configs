@@ -19,3 +19,17 @@ Print
 super + Print
     gnome-screenshot -i
 
+super + c
+    connect-bt "AirPods Pro"
+
+super + n
+    notion
+
+super + shift + s
+    auto.sh && sh /home/mark/.fehbg &
+
+super + shift + w
+    st -d /home/mark/TU/SoSe-2021 -e 'zsh' & st -d /home/mark/TU/SoSe-2021 -e 'zsh' & chromium --app=https://www.notion.so/Uni-6d6ad8b317a34b8e8bcf3867ec31953d &
+
+super + shift + i
+    killall uxplay ; uxplay > /dev/null 2>&1

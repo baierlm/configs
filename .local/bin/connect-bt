@@ -1,0 +1,6 @@
+#!/bin/sh
+DEVICE="$1"||"AirPods Pro"
+notify-send "Connecting $DEVICE" --expire-time 1000
+ADRESS=$(bt-device -l | grep "AirPods Pro" | grep -oP '\(\K[^)]+')
+echo -e "connect $ADRESS" | bluetoothctl
+
