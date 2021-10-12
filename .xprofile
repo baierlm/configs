@@ -24,5 +24,6 @@ prime-offload &
 xinput set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Accel Speed' 0.5 &
 # launch and restart sxhkd on config change
 sxhkd -m 1 &
+#st -d /home/mark/TU/SoSe-2021 -e 'zsh' & st -d /home/mark/TU/SoSe-2021 -e 'zsh' & chromium --app=https://www.notion.so/Uni-6d6ad8b317a34b8e8bcf3867ec31953d &
 echo ~/.config/sxhkd/sxhkdrc | entr -np  pkill -USR1 -x sxhkd &
 echo -e "power on" | bluetoothctl && blueman-applet &

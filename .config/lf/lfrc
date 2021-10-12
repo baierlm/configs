@@ -1,3 +1,4 @@
+# for preview: https://github.com/neeshy/lfimg.git
 # interpreter for shell commands (needs to be POSIX compatible)
 set shell sh
 
@@ -15,6 +16,9 @@ set wrapscroll
 set icons
 set drawbox
 set globsearch
+
+set previewer ~/.config/lf/lfimg/pv 
+set cleaner ~/.config/lf/lfimg/cls 
 
 cmd yank-dirname ${{
     dirname -- "$f" | tr -d '\n' | xclip -i -selection clipboard
