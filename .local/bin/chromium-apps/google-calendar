@@ -1,1 +1,1 @@
-chromium --app=https://calendar.google.com/calendar/r
+flatpak run org.chromium.Chromium --app=https://calendar.google.com/calendar/r

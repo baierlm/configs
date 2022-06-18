@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Notion
+Icon=/home/mark/.local/bin/chromium-apps/notion.png
+StartupWMClass=Notion
+Comment=Notion desktop chromium app
+Exec="/home/mark/.local/bin/chromium-apps/notion" %u
+Type=Application
+Terminal=false

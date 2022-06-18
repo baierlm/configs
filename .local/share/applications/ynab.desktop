@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=YNAB
+Icon=/home/mark/.local/bin/chromium-apps/ynab.png
+StartupWMClass=YNAB
+Comment=youneedabudget desktop chromium app
+Exec="/home/mark/.local/bin/chromium-apps/ynab" %u
+Type=Application
+Terminal=false

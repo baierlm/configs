@@ -1,0 +1,3 @@
+#!/bin/sh
+dnd_unit_translate.py && xclip -selection clipboard -o
+

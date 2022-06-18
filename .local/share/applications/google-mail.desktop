@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Google Mail
+Icon=/home/mark/.local/bin/chromium-apps/google-mail.png
+StartupWMClass=google-mail
+Comment=Google Calendar desktop chromium app
+Exec="/home/mark/.local/bin/chromium-apps/google-mail" %u
+Type=Application
+Terminal=false

@@ -20,3 +20,4 @@ alias \
 	ka="killall" \
 	g="git" \
 	sdn="sudo shutdown -h now" \
+

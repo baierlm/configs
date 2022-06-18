@@ -1,1 +1,1 @@
-chromium --app=https://mail.google.com/mail/u/0/#inbox
+flatpak run org.chromium.Chromium --app=https://mail.google.com/mail/u/0/#inbox

@@ -18,7 +18,7 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots)		# Include hidden files.
+comp_options+=(globdots)		# Include hidden files.
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -33,7 +33,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-source /usr/share/nvm/init-nvm.sh
+#source /usr/share/nvm/init-nvm.sh
 
 source ~/.config/zsh/aliasrc
 
@@ -94,14 +94,13 @@ bindkey -v '^?' backward-delete-char
 bindkey -s '^o' 'lfcd\n'
 
 
-
-if ! pacman -Qs zsh-fast-syntax-highlighting >/dev/null 2>&1; then 
-    yay -S --noconfirm zsh-fast-syntax-highlighting
+if [ ! -d "$HOME/.config/zsh/plugins/fast-syntax-highlighting" ]; then
+    git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ~/.config/zsh/plugins/fast-syntax-highlighting
 fi
 
-if ! pacman -Qs zsh-autosuggestions >/dev/null 2>&1; then 
-    yay -S --noconfirm zsh-autosuggestions
+if [ ! -d "$HOME/.config/zsh/plugins/zsh-autosuggestions" ]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.config/zsh/plugins/zsh-autosuggestions
 fi
 # Should be last.
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
+source ~/.config/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null

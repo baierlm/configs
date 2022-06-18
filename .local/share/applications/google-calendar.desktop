@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Google Calendar
+Icon=/home/mark/.local/bin/chromium-apps/google-calendar.png
+StartupWMClass=google-calendar
+Comment=Google Calendar desktop chromium app
+Exec="/home/mark/.local/bin/chromium-apps/google-calendar" %u
+Type=Application
+Terminal=false
