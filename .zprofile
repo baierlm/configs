@@ -107,3 +107,7 @@ ex=🎯:\
 *.part=💔:\
 *.torrent=🔽:\
 "
+
+
+# Added by Toolbox App
+export PATH="$PATH:/home/mark/.local/share/JetBrains/Toolbox/scripts"

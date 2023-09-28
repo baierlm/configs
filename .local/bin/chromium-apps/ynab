@@ -1,1 +1,1 @@
-flatpak run org.chromium.Chromium --profile-directory=Default --app=https://app.youneedabudget.com
+chromium-browser --profile-directory=Default --app=https://app.youneedabudget.com
